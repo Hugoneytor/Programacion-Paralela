@@ -72,6 +72,8 @@ function crearMatriz3(rows, columns){
 
 function calcular(res, uno, dos){
 
+    console.time('rellenar');
+    
     for(let i = 0; i < res.length; i++){
         for(let k = 0; k < res[i].length; k++){
             for(let j = 0; j < res[i].length; j++){
@@ -81,6 +83,7 @@ function calcular(res, uno, dos){
             
         }
     }
+    console.timeEnd('rellenar');
 
     return res;
 
